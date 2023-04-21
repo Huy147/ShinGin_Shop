@@ -5,18 +5,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace ShinGin_Shop.Models
+namespace ShinGin_Shop.Models.EF
 {
-    [Table("tb_Contact")]
-    public class Contact : CommonAbstract
+    [Table("tb_Subscribe")]
+    public class Subscribe : CommonAbstract
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        public string Name { get; set; }
+        [EmailAddress]
+        [Required]
         public string Email { get; set; }
-        public string Website { get; set; }
-        public string Message { get; set; }
-        public bool isRead { get; set; }
+        public DateTime CreateDate { get; set; }
+    
+
     }
 }

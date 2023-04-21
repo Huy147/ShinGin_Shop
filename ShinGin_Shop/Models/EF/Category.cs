@@ -1,30 +1,33 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
-using System.Web.Mvc;
 
-namespace ShinGin_Shop.Models
+namespace ShinGin_Shop.Models.EF
 {
-    [Table("tb_News")]
-    public class News : CommonAbstract
+    [Table("tb_Category")]
+    public class Category : CommonAbstract
     {
+        public Category() { 
+            this.News = new HashSet<News>();
+        }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required(ErrorMessage = "Bạn không để trống tiêu đề tin")]
-        [StringLength(150)]
+        [Required]
+        [StringLength(250)]
         public string Title { get; set; }
+        [StringLength(4000)]
         public string Description { get; set; }
-        [AllowHtml]
-        public string Detail { get; set; }
-        public string Image { get; set; }
-        public int CategoryId { get; set; }
         public string SeoTitle { get; set; }
         public string SeoDescription { get; set; }
-        public string SeoKeywords { get; set; }
-   
+        public string Position { get; set; }
+
+        public ICollection<News> News { get; set; }
+        public ICollection <Posts> Posts { get; set; }
+
     }
 }
