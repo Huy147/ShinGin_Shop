@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace ShinGin_Shop.Models
+namespace ShinGin_Shop.Models.EF
 {
     [Table("tb_SystemSetting")]
     public class SystemSetting 

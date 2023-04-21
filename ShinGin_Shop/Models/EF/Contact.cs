@@ -5,20 +5,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace ShinGin_Shop.Models
+namespace ShinGin_Shop.Models.EF
 {
-    [Table("tb_Category")]
-    public class Category : CommonAbstract
+    [Table("tb_Contact")]
+    public class Contact : CommonAbstract
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         [StringLength(250)]
-        public string Title { get; set; }
+        public string Name { get; set; }
+        [StringLength(250)]
+        public string Email { get; set; }
+        public string Website { get; set; }
         [StringLength(4000)]
-        public string Description { get; set; }
-        public string SeoTitle { get; set; }
-        public string SeoDescription { get; set; }
-        public string Position { get; set; }
+        public string Message { get; set; }
+        public bool isRead { get; set; }
     }
 }

@@ -106,3 +106,5 @@ E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.csproj.Co
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.csproj.CopyComplete
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.dll
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.pdb
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.CreateDataBase.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.csproj.GenerateResource.cache
