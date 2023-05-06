@@ -17,13 +17,19 @@ namespace ShinGin_Shop.Models.EF
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Tên danh mục không được để trống")]
         [StringLength(250)]
         public string Title { get; set; }
-        [StringLength(4000)]
+        public string Alias { get; set; }
+        [StringLength(3000)]
         public string Description { get; set; }
+        [StringLength(250)]
         public string SeoTitle { get; set; }
+        [StringLength(250)]
         public string SeoDescription { get; set; }
+        [StringLength(250)]
+        public string SeoKeywords { get; set; }
+        [StringLength(250)]
         public string Position { get; set; }
 
         public ICollection<News> News { get; set; }

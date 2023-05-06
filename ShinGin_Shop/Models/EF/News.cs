@@ -17,6 +17,8 @@ namespace ShinGin_Shop.Models.EF
         [Required(ErrorMessage = "Bạn không để trống tiêu đề tin")]
         [StringLength(150)]
         public string Title { get; set; }
+        public string Alias { get; set; }
+        [StringLength(4000)]
         public string Description { get; set; }
         [AllowHtml]
         public string Detail { get; set; }

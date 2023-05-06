@@ -23,7 +23,8 @@ namespace ShinGin_Shop.Models.EF
         [StringLength(250)]
         public string Title { get; set; }
         public string ProductCode { get; set; }
-        [StringLength(250)]
+        public string Alias { get; set; }
+        [StringLength(4000)]
         public string Description { get; set; }
 
         [AllowHtml]
