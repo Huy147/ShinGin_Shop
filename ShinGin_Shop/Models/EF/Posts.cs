@@ -17,9 +17,8 @@ namespace ShinGin_Shop.Models.EF
         [Required]
         [StringLength(150)]
         public string Title { get; set; }
-
-        [StringLength(150)]
         public string Alias { get; set; }
+        [StringLength(3000)]
         public string Description { get; set; }
 
         [AllowHtml]

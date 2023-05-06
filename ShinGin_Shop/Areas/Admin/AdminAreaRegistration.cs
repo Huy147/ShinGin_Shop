@@ -18,7 +18,7 @@ namespace ShinGin_Shop.Areas.Admin
                 "Admin_default",
                 "Admin/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional },
-                namespaces: new[] { "ShinGin_Shop.Controllers" }
+                namespaces: new[] { "ShinGin_Shop.Areas.Admin.Controllers" }
             );
         }
     }
