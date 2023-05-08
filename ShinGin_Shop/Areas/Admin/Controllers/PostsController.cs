@@ -1,31 +1,32 @@
-﻿using PagedList;
+﻿using ShinGin_Shop.Models.EF;
 using ShinGin_Shop.Models;
-using ShinGin_Shop.Models.EF;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
+using System.Web.UI;
 
 namespace ShinGin_Shop.Areas.Admin.Controllers
 {
-    public class NewsController : Controller
+    public class PostsController : Controller
     {
         ApplicationDbContext _db = new ApplicationDbContext();
         // GET: Admin/News
-        public ActionResult Index(int? page,String SearchText)
+        public ActionResult Index(int? page, String SearchText)
         {
             var pageSize = 5;
-            if(page == null)
-            {  
-                page = 1; 
+            if (page == null)
+            {
+                page = 1;
             }
-            IEnumerable<News> items = _db.News.OrderByDescending(x => x.Id);
+            IEnumerable<Posts> items = _db.Posts.OrderByDescending(x => x.Id);
             if (!String.IsNullOrEmpty(SearchText))
             {
                 items = items.Where(x => x.Alias.Contains(SearchText) || x.Title.Contains(SearchText));
-            }    
-            var pageIndex = page.HasValue ? Convert.ToInt32(page) :1;
+            }
+            var pageIndex = page.HasValue ? Convert.ToInt32(page) : 1;
             items = items.ToPagedList(pageIndex, pageSize);
             ViewBag.PageSize = pageSize;
             ViewBag.Page = page;
@@ -37,7 +38,7 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(News model)
+        public ActionResult Create(Posts model)
         {
             if (ModelState.IsValid)
             {
@@ -45,26 +46,39 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
                 model.CategoryId = 17;
                 model.ModifiedbyDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
-                _db.News.Add(model);
+                _db.Posts.Add(model);
                 _db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(model);
         }
+        [HttpPost]
+        public ActionResult IsActive(int id)
+        {
+            var item = _db.Posts.Find(id);
+            if (item != null)
+            {
+                item.IsActive = !item.IsActive;
+                _db.Entry(item).State = System.Data.Entity.EntityState.Modified;
+                _db.SaveChanges();
+                return Json(new { success = true, isActive = item.IsActive });
+            }
+            return Json(new { susscess = false });
+        }
         public ActionResult Edit(int id)
         {
-            var item = _db.News.Find(id);
+            var item = _db.Posts.Find(id);
             return View(item);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(News model)
+        public ActionResult Edit(Posts model)
         {
             if (ModelState.IsValid)
             {
                 model.ModifiedbyDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
-                _db.News.Attach(model);
+                _db.Posts.Attach(model);
                 _db.Entry(model).State = System.Data.Entity.EntityState.Modified;
                 _db.SaveChanges();
                 return RedirectToAction("Index");
@@ -74,25 +88,12 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
         [HttpPost]
         public ActionResult Delete(int id)
         {
-            var item = _db.News.Find(id);
+            var item = _db.Posts.Find(id);
             if (item != null)
             {
-                _db.News.Remove(item);
+                _db.Posts.Remove(item);
                 _db.SaveChanges();
                 return Json(new { success = true });
-            }
-            return Json(new { susscess = false });
-        }
-        [HttpPost]
-        public ActionResult IsActive(int id)
-        {
-            var item = _db.News.Find(id);
-            if (item != null)
-            {
-                item.IsActive = !item.IsActive;
-                _db.Entry(item).State = System.Data.Entity.EntityState.Modified;
-                _db.SaveChanges();
-                return Json(new { success = true, isActive = item.IsActive });
             }
             return Json(new { susscess = false });
         }
@@ -106,8 +107,8 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
                 {
                     foreach (var item in items)
                     {
-                        var obj = _db.News.Find(Convert.ToInt32(item));
-                        _db.News.Remove(obj);
+                        var obj = _db.Posts.Find(Convert.ToInt32(item));
+                        _db.Posts.Remove(obj);
                         _db.SaveChanges();
                     }
                 }
@@ -116,5 +117,4 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
             return Json(new { success = false });
         }
     }
-
 }

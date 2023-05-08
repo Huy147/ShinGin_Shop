@@ -94,3 +94,8 @@ E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Numerics.Vecto
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\CKFinder.dll
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\CKFinder.pdb
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Table_Posts.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\PagedList.dll
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\PagedList.Mvc.dll
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\PagedList.xml
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\PagedList.Mvc.xml
