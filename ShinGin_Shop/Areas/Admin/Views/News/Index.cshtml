@@ -1,5 +1,6 @@
-﻿
-@model IEnumerable<ShinGin_Shop.Models.EF.News>
+﻿@model PagedList.PagedList<ShinGin_Shop.Models.EF.News>
+@using PagedList;
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Danh sách tin tức";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -45,10 +46,25 @@
 
             <div class="card-tools">
                 <a href="/admin/news/create" class="btn btn-success">Thêm mới</a>
-                <a href="#" class= "btn btn-danger" id = "BtnDeleteAll">Xóa tất cả</a>
+                <a href="#" class="btn btn-danger" id="BtnDeleteAll">Xóa tất cả</a>
             </div>
         </div>
         <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    @using (Html.BeginForm("index", "News", FormMethod.Get,new { }))
+                    {
+                        <div class="input-group input-group-sm">
+                            @Html.TextBox("SearchText", null, new { @class = "form-control", @placeholder = "Tìm kiếm theo tiêu đề tin tức" })
+
+
+                            <span class="input-group-append">
+                                <button type="submit" class="btn btn-info btn-flat">Tìm kiếm</button>
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -58,27 +74,26 @@
                         <th>Hình ảnh</th>
                         <th>Ngày tạo</th>
                         <th>Hiển thị</th>
-                        <th>Thứ tự</th>
+                        <th>Chức năng</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     @if (Model != null && Model.Any())
                     {
-                        var i = 1;
+                        var i = ((ViewBag.Page - 1) * ViewBag.PageSize) + 1;
                         foreach (var item in Model)
                         {
                             var strCheck = item.IsActive ? "<i class='fa fa-check text-sussces'></i>" : "<i class='fas fa-times text-danger'></i> ";
                             <tr id="trow_@item.Id">
-                                <td><input type="checkbox" class="cbkItem" value="@item.Id"; /></td>
+                                <td><input type="checkbox" class="cbkItem" value="@item.Id" ; /></td>
                                 <td>@i</td>
                                 <td>@item.Title</td>
-                                <td><img src="@item.Image" width="50" /></td>
+                                <td><img src="@item.Image" width="70" /></td>
                                 <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
-                                <td style="text-align: center;">
+                                <td>
                                     <a href='#' data-id="@item.Id" class="btnActive">@Html.Raw(strCheck)</a>
                                 </td>
-
                                 <td>
                                     <a href="/admin/news/edit/@item.Id" class="btn btn-sm btn-primary">Sửa</a>
                                     <a href="#" data-id="@item.Id" class="btn btn-sm btn-danger btnDelete">Xóa</a>
@@ -95,7 +110,7 @@
                     }
                 </tbody>
             </table>
-
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
@@ -111,11 +126,11 @@
 @section scripts{
     <script>
         $(document).ready(function () {
-            // sử dụng ajax chọn tất cả các tin tức
+            // sử dụng ajax chọn các tin tức
             $('body').on('change', '#SelectAll', function () {
                 var checkStatus = this.checked;
                 var checkbox = $(this).parents('.card-body').find('tr td input:checkbox');
-                checkbox.each(function (){
+                checkbox.each(function () {
                     this.checked = checkStatus;
                     if (this.checked) {
                         checkbox.attr('selected', 'checked');
@@ -123,6 +138,42 @@
                         checkbox.attr('selected', '');
                     }
                 });
+            });
+            //sử dụng ajax xóa tất cả các tin tức đã chọn
+            $('body').on('click', '#BtnDeleteAll', function (e) {
+                e.preventDefault();
+                var str = "";
+                var checkbox = $(this).parents('.card').find('tr td input:checkbox');
+                var i = 0;
+                checkbox.each(function () {
+                    if (this.checked) {
+                        var _id = $(this).val();
+                        if (i === 0) {
+                            str += _id;
+                        }
+                        else {
+                            str += "," + _id;
+                        }
+                        i++;
+                    } else {
+                        checkbox.attr('selected', '');
+                    }
+                });
+                if (str.length > 0) {
+                    var conf = confirm('Bạn có muốn xóa các bản ghi này không');
+                    if (conf === true) {
+                        $.ajax({
+                            url: '/admin/news/deleteAll',
+                            type: 'POST',
+                            data: { ids: str },
+                            success: function (rs) {
+                                if (rs.success) {
+                                    location.reload();
+                                }
+                            }
+                        });
+                    }
+                }
             });
             // sử dụng ajax xóa tin tức
             $('body').on('click', '.btnDelete', function () {

@@ -1,4 +1,5 @@
-﻿using ShinGin_Shop.Models;
+﻿using PagedList;
+using ShinGin_Shop.Models;
 using ShinGin_Shop.Models.EF;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,22 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
     {
         ApplicationDbContext _db = new ApplicationDbContext();
         // GET: Admin/News
-        public ActionResult Index()
+        public ActionResult Index(int? page,String SearchText)
         {
-            var items = _db.News.OrderByDescending(x => x.Id).ToList();
+            var pageSize = 5;
+            if(page == null)
+            {  
+                page = 1; 
+            }
+            IEnumerable<News> items = _db.News.OrderByDescending(x => x.Id);
+            if (!String.IsNullOrEmpty(SearchText))
+            {
+                items = items.Where(x => x.Alias.Contains(SearchText) || x.Title.Contains(SearchText));
+            }    
+            var pageIndex = page.HasValue ? Convert.ToInt32(page) :1;
+            items = items.ToPagedList(pageIndex, pageSize);
+            ViewBag.PageSize = pageSize;
+            ViewBag.Page = page;
             return View(items);
         }
         public ActionResult Create()
@@ -82,5 +96,25 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
             }
             return Json(new { susscess = false });
         }
+        [HttpPost]
+        public ActionResult DeleteAll(string ids)
+        {
+            if (!string.IsNullOrEmpty(ids))
+            {
+                var items = ids.Split(',');
+                if (items != null && items.Any())
+                {
+                    foreach (var item in items)
+                    {
+                        var obj = _db.News.Find(Convert.ToInt32(item));
+                        _db.News.Remove(obj);
+                        _db.SaveChanges();
+                    }
+                }
+                return Json(new { success = true });
+            }
+            return Json(new { success = false });
+        }
     }
+
 }
