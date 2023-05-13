@@ -182,6 +182,8 @@
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\NewsController.cs" />
     <Compile Include="Areas\Admin\Controllers\PostsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductsCategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -203,6 +205,18 @@
     <Compile Include="Migrations\202305081051367_Table_Posts.cs" />
     <Compile Include="Migrations\202305081051367_Table_Posts.designer.cs">
       <DependentUpon>202305081051367_Table_Posts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305111747332_Updatetb_Product.cs" />
+    <Compile Include="Migrations\202305111747332_Updatetb_Product.designer.cs">
+      <DependentUpon>202305111747332_Updatetb_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305130902319_Updatetb_Productscategory.cs" />
+    <Compile Include="Migrations\202305130902319_Updatetb_Productscategory.designer.cs">
+      <DependentUpon>202305130902319_Updatetb_Productscategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305130907553_Updatetb_ProductCategory_2.cs" />
+    <Compile Include="Migrations\202305130907553_Updatetb_ProductCategory_2.designer.cs">
+      <DependentUpon>202305130907553_Updatetb_ProductCategory_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -3141,6 +3155,10 @@
     <Content Include="Areas\Admin\Views\Posts\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Posts\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Posts\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Products\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Products\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductsCategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductsCategory\Create.cshtml" />
     <None Include="Scripts\jquery-3.6.4.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.4.js" />
     <Content Include="Scripts\jquery-3.6.4.min.js" />
@@ -3233,6 +3251,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305081051367_Table_Posts.resx">
       <DependentUpon>202305081051367_Table_Posts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305111747332_Updatetb_Product.resx">
+      <DependentUpon>202305111747332_Updatetb_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305130902319_Updatetb_Productscategory.resx">
+      <DependentUpon>202305130902319_Updatetb_Productscategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305130907553_Updatetb_ProductCategory_2.resx">
+      <DependentUpon>202305130907553_Updatetb_ProductCategory_2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
