@@ -8,6 +8,7 @@ using ShinGin_Shop.Models.EF;
 
 namespace ShinGin_Shop.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin,Staff")]
     public class CategoryController : Controller
     {
         ApplicationDbContext _db = new ApplicationDbContext();  
@@ -28,7 +29,7 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
             if(ModelState.IsValid)
             {
                 model.CreatedDate = DateTime.Now;
-                model.ModifiedbyDate = DateTime.Now;
+                model.ModifiedDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
                 _db.Categories.Add(model);
                 _db.SaveChanges();
@@ -48,10 +49,11 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 _db.Categories.Attach(model);
-                model.ModifiedbyDate = DateTime.Now;
+                model.ModifiedDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
                 _db.Entry(model).Property(x => x.Title).IsModified = true;
                 _db.Entry(model).Property(x => x.Description).IsModified = true;
+                _db.Entry(model).Property(x => x.Link).IsModified = true;
                 _db.Entry(model).Property(x => x.Alias).IsModified = true;
                 _db.Entry(model).Property(x => x.SeoDescription).IsModified = true;
                 _db.Entry(model).Property(x => x.SeoKeywords).IsModified = true;

@@ -102,3 +102,131 @@ E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\PagedList.Mvc.xml
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Product.resources
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Productscategory.resources
 E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_ProductCategory_2.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_CommonAbstract.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_ProductCategory.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Order.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Order_2.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_OrderDetail.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.AddTb_Statistics.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.AddTb_Statistics_2st.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\Dapper.dll
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\bin\Dapper.xml
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.CreateSettingSystemViewModel.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Product1.resources
+E:\Đồ án cơ sở\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Category1.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\ShinGin_Shop.dll.config
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\ShinGin_Shop.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\ShinGin_Shop.pdb
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\csc.exe
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\csc.exe.config
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\csc.rsp
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\csi.exe
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\csi.exe.config
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\csi.rsp
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Buffers.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Collections.Immutable.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Memory.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Numerics.Vectors.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Reflection.Metadata.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\vbc.exe
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\vbc.exe.config
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\vbc.rsp
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\VBCSCompiler.exe
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\roslyn\VBCSCompiler.exe.config
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Antlr3.Runtime.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\CKFinder.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Dapper.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\EntityFramework.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\EntityFramework.SqlServer.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Google.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Web.Infrastructure.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Newtonsoft.Json.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Owin.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\PagedList.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\PagedList.Mvc.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Helpers.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Mvc.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Optimization.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Razor.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.WebPages.Deployment.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.WebPages.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.WebPages.Razor.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\WebGrease.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\CKFinder.pdb
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Dapper.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Newtonsoft.Json.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\PagedList.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\PagedList.Mvc.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Helpers.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Mvc.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Optimization.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.Razor.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.WebPages.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.WebPages.Deployment.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\System.Web.WebPages.Razor.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Antlr3.Runtime.pdb
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\EntityFramework.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\EntityFramework.SqlServer.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Google.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.csproj.AssemblyReference.cache
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.CreateDataBase.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Category.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Category123.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Table_Posts.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Product.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Productscategory.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_ProductCategory_2.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_CommonAbstract.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_ProductCategory.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Order.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Order_2.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_OrderDetail.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.AddTb_Statistics.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.AddTb_Statistics_2st.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Product1.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.Updatetb_Category1.resources
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.csproj.GenerateResource.cache
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.csproj.CoreCompileInputs.cache
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.csproj.CopyComplete
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.dll
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.pdb
+E:\Đồ án cơ sở\Source code\ShinGin_Shop\ShinGin_Shop\obj\Debug\ShinGin_Shop.Migrations.UpdateTb_Database.resources

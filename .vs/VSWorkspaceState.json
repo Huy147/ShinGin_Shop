@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ShinGin_Shop",
+    "\\ShinGin_Shop\\Areas",
+    "\\ShinGin_Shop\\Areas\\Admin",
+    "\\ShinGin_Shop\\Areas\\Admin\\Controllers",
+    "\\ShinGin_Shop\\Areas\\Admin\\Views",
+    "\\ShinGin_Shop\\Areas\\Admin\\Views\\Order",
+    "\\ShinGin_Shop\\Controllers",
+    "\\ShinGin_Shop\\Views",
+    "\\ShinGin_Shop\\Views\\Home"
+  ],
+  "SelectedNode": "\\ShinGin_Shop\\Areas\\Admin\\Views\\web.config",
+  "PreviewInSolutionExplorer": false
+}

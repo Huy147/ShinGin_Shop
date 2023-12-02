@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ShinGin_Shop.Models.ShoppingCartItem>
+@using ShinGin_Shop.Common
+
+@if (Model != null && Model.Any())
+{
+    <h3>GIỎ HÀNG <span style="float:right;position:relative"><small>@Model.Count()</small></span></h3>
+    var tongtien = decimal.Zero;
+    <div style="border: 1px solid #808080; width: 425px">
+        <table class="table">
+            @foreach (var item in Model)
+            {
+                tongtien += item.TotalPrice;
+                <tr class="row">
+                    <th class="col-10">@item.ProductName</th>
+                    <th class="col-2">@Common.FormatNumber(item.Price, 0)</th>
+                </tr>
+                <tr class="row">
+                    <th class="col-10" colspan="2">Số lượng</th>
+                    <th class="col-2">@item.Quantity</th>
+                </tr>
+            }
+            <tr>
+                <td id="total-label" class="col-8">Tổng tiền</td>
+                <td id="total-label" class="col-2">@Common.FormatNumber(tongtien, 0)</td>
+
+            </tr>
+        </table>
+    </div>
+
+}
+<style>
+    #total-label{
+        margin-left:10px;
+        font-weight: bold;
+        color: red;
+    }
+    .table {
+       margin-left:10px;
+    }
+    
+
+</style>
