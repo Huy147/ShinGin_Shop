@@ -10,6 +10,7 @@ using System.Web.UI;
 
 namespace ShinGin_Shop.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin,Staff")]
     public class PostsController : Controller
     {
         ApplicationDbContext _db = new ApplicationDbContext();
@@ -43,8 +44,8 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 model.CreatedDate = DateTime.Now;
-                model.CategoryId = 17;
-                model.ModifiedbyDate = DateTime.Now;
+                model.CategoryId = 21;
+                model.ModifiedDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
                 _db.Posts.Add(model);
                 _db.SaveChanges();
@@ -76,7 +77,7 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                model.ModifiedbyDate = DateTime.Now;
+                model.ModifiedDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
                 _db.Posts.Attach(model);
                 _db.Entry(model).State = System.Data.Entity.EntityState.Modified;

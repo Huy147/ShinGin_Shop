@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace ShinGin_Shop.Areas.Admin.Controllers
 {
+/*    [Authorize(Roles = "Admin,Staff")]*/
     public class NewsController : Controller
     {
         ApplicationDbContext _db = new ApplicationDbContext();
@@ -43,7 +44,7 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
             {
                 model.CreatedDate = DateTime.Now;
                 model.CategoryId = 17;
-                model.ModifiedbyDate = DateTime.Now;
+                model.ModifiedDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
                 _db.News.Add(model);
                 _db.SaveChanges();
@@ -62,7 +63,7 @@ namespace ShinGin_Shop.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                model.ModifiedbyDate = DateTime.Now;
+                model.ModifiedDate = DateTime.Now;
                 model.Alias = ShinGin_Shop.Models.Common.Filter.FilterChar(model.Title);
                 _db.News.Attach(model);
                 _db.Entry(model).State = System.Data.Entity.EntityState.Modified;

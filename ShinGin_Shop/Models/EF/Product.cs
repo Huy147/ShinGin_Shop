@@ -33,6 +33,7 @@ namespace ShinGin_Shop.Models.EF
         [StringLength(250)]
         public string Image { get; set; }
         public decimal Price { get; set; }
+        public decimal OriginalPrice { get; set; }
         public decimal? PriceSale { get; set; }
         public int Quantity { get; set; }
         public bool IsHome { get; set; }
@@ -41,6 +42,8 @@ namespace ShinGin_Shop.Models.EF
         public bool IsHot { get; set; }
         public bool IsActive { get; set; }
         public int ProductCategoryId { get; set; }
+
+        public int ViewCount { get; set; }
 
         [StringLength(250)]
         public string SeoTitle { get; set; }

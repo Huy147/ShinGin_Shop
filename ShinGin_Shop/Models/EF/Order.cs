@@ -19,17 +19,16 @@ namespace ShinGin_Shop.Models.EF
         public int Id { get; set; }
         [Required]
         public string Code { get; set; }
-        [Required]
-        [StringLength(150)]
+        [Required(ErrorMessage = "Tên khách hàng không để trống")]
         public string CustomerName { get; set; }
-        [Required]
-        [StringLength(10)]
+        [Required(ErrorMessage = "Số điện thoại không để trống")]
         public string Phone { get; set; }
-        [Required]
-        [StringLength(250)]
+        [Required(ErrorMessage = "Địa chỉ khổng để trống")]
         public string Address { get; set; }
-        public string TotalAmount { get; set; }
-        public string Quantity { get; set; }
+        public string Email { get; set; }
+        public decimal TotalAmount { get; set; }
+        public int Quantity { get; set; }
+        public int TypePayment { get; set; }
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
 
     }

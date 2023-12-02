@@ -14,7 +14,7 @@ namespace ShinGin_Shop.Models
         // Ngày tạo
         public DateTime CreatedDate { get; set; }
         // Ngày sửa
-        public DateTime ModifiedbyDate { get; set;}
+        public DateTime ModifiedDate { get; set;}
 
     }
 }

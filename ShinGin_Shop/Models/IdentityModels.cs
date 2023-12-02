@@ -27,6 +27,7 @@ namespace ShinGin_Shop.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+        public DbSet<Statistics> Statistics { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Advertisement> Advertisements { get; set; }
         public DbSet<Contact> Contacts { get; set; }
@@ -37,7 +38,7 @@ namespace ShinGin_Shop.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<ProductImage> ProductImages { get; set; }
-        public DbSet<Subscribe> subscribes { get; set; }
+        public DbSet<Subscribe> Subscribes { get; set; }
         public DbSet<SystemSetting> SystemSettings { get; set; }
 
 
